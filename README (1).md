@@ -7,7 +7,7 @@
 Bradley Barker, Cody Gardner, Yawavi Koudjonou (Vi)
 
 ## Situation: 
-The CDC site offers many datasets on COVID-19, but we want to combine and clean a few CDC datasets as well as US Hourly Wage Data in order to show a greater picture.
+The CDC site offers many datasets on COVID-19, but we wanted to combine and clean a few CDC datasets and merge with US Hourly Wage Data in order to show a greater picture of COVID-19 data.
 
 ## Questions:
 1. What is the correlation between vaccination count and COVID deaths per state?
@@ -30,13 +30,13 @@ US Bureau of Labor Statistics:
     * csv library
 * pgAdmin4 (PostgreSQL)
 
-### ETL (Extract Transform Load) Process Outline
+## ETL (Extract Transform Load) Process Outline
 
-### Extract
+### 1. Extract
 1. We pulled in data from three different sources and they were all exported into CSV files
 2. The next step will show how each table was cleaned before being uploaded into SQL
 
-### Transform
+### 2. Transform
 
 ### CDC - COVID-19 Deaths per 100k(9KB)
 1. Downloaded raw data from CDC in csv format
@@ -74,7 +74,7 @@ US Bureau of Labor Statistics:
         - The data was merged together on the "State" columns
 5. Displayed the data types before connecting the data frames to Postgres SQL
 
-### Load
+### __3. LOAD__
 
 ### Creating the Databases in Postgres SQL
 1. Created the database COVID by creating the engine and the connection to the SQL database
